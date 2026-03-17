@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Login</title>
+</head>
+<body>
+
+<h2>Admin Login</h2>
+
+<form onsubmit="login(event)">
+<input type="text" id="username" placeholder="Username"><br><br>
+<input type="password" id="password" placeholder="Password"><br><br>
+<button type="submit">Login</button>
+</form>
+
+<script>
+function login(e){
+e.preventDefault();
+
+let user = document.getElementById("username").value;
+let pass = document.getElementById("password").value;
+
+if(user==="Sunnycsc" && pass==="12345"){
+alert("Login Successful");
+window.location.href="dashboard.html";
+}else{
+alert("Invalid Login");
+}
+}
+</script>
+
+</body>
+</html>
